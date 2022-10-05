@@ -17,10 +17,27 @@ This repository contains engineering materials of a self-driven vehicle's model 
 
 _This part must be filled by participants with the technical clarifications about the code: which modules the code consists of, how they are related to the electromechanical components of the vehicle, and what is the process to build/compile/upload the code to the vehicle’s controllers._
 
-## How to prepare the repo based on the template
+Engineering materials
+====
 
-_Remove this section before the first commit to the repository_
+This project was created for the Future Enginers WRO competence, the main idea  of this is break trought into the circuit completely autunomous, with the help of bot code and components, it´s able to get back into the initial position, find angles and turn in the corners with no problem, and stay in the mid evading collisions.
 
-1. Clone this repo by using the `git clone` functionality.
-2. Remove `.git` directory
-3. [Initialize a new public repository on GitHub](https://github.com/new) by following instructions from "create a new repository on the command line" section (appeared after pressing "Create repository" button).
+Problems and solution
+
+## Initial position
+First, the vehicle need to recognize the ambient around it, with the help of sensor1 , sensor 2 , sensor3 , he is able to save the distance in the variables pos_x_inicial (for the right and left distances) and pos_y_inicial (for front distance). He´s going to save them into grado_inicial variable, which will be used at the end.
+
+## Movement
+After that he will start to go forward, mainmotor (rear motor), at a speed of 190cm/s, this not will stop until he reach the end.
+
+## Servos
+smotordir (servo motor for sensor), this one rotate in 180°. 90° and 30° angle; mantain the sensor1 in constlanty movement for search distances.
+smotorsen (servo motor for wheels), this is manated to move the wheels when (Funtion 
+
+## alignment
+Sensor 2 , sensor 3 are going to work searching for distance, this distance are going to be saved in dist2 (sensor 2 distance) and dist3 (sensor 3 distance), 
+
+## Crossing
+Sensors are going to continue with alignment, but when the sensors detects a distance too large than the other, the bot is going to able a complex proccess, 
+
+## Final position
